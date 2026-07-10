@@ -38,7 +38,12 @@ for %%C in (%CONFIGS%) do (
     REM extract_tickets is EXCLUDE_FROM_ALL, so build it explicitly. It lands in
     REM build\tools\%%C\ rather than the shipped output directory.
     echo [INFO] Building tool extract_tickets for %%C
-    cmake --build build --config %%C --target extract_tickets
+    echo "%GENERATOR%" | findstr /I /C:"Visual Studio" >nul
+    if not errorlevel 1 (
+        cmake --build build\tools --config %%C --target extract_tickets
+    ) else (
+        cmake --build build --config %%C --target extract_tickets
+    )
     if errorlevel 1 goto :fail
 )
 
