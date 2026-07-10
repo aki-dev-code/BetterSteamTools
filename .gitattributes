@@ -24,6 +24,16 @@ CMakeLists.txt text eol=lf
 *.cmd     text eol=crlf
 *.ps1     text eol=crlf
 
+# GitHub Linguist language stats
+*.c       linguist-language=C
+*.cc      linguist-language=C++
+*.cpp     linguist-language=C++
+*.h       linguist-language=C++
+*.hpp     linguist-language=C++
+*.bat     linguist-vendored
+*.cmd     linguist-vendored
+*.ps1     linguist-vendored
+
 # Binary files
 *.dll     binary
 *.exe     binary
