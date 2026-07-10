@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>OpenSteamTool</h1>
+  <h1>BetterSteamTools</h1>
 
   <p>
     <strong>Open-Source Steam Unlock Tool</strong>
