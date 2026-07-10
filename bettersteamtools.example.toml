@@ -1,5 +1,5 @@
-# opensteamtool.toml — OpenSteamTool configuration
-# Place at: <Steam>/opensteamtool.toml
+# bettersteamtools.toml — BetterSteamTools configuration
+# Place at: <Steam>/bettersteamtools.toml
 # This file is loaded at startup and hot-reloaded after changes.
 
 [log]
@@ -75,18 +75,18 @@ enable_api = true
 # Optional library injection into game processes.
 # The injected library must match the target process architecture.
 enabled = false
-# library_x64 = "OpenSteamTool.GameHook.x64.dll"
-# library_x86 = "OpenSteamTool.GameHook.x86.dll"
+# library_x64 = "BetterSteamTools.GameHook.x64.dll"
+# library_x86 = "BetterSteamTools.GameHook.x86.dll"
 
 [cloud]
 # Optional Steam Cloud save redirection for unlocked ("lua") games, powered by
 # CloudRedirect (https://github.com/Selectively11/CloudRedirect).
-# When enabled, OpenSteamTool loads cloud_redirect.dll inside Steam, registers
+# When enabled, BetterSteamTools loads cloud_redirect.dll inside Steam, registers
 # every addappid() game as a redirected app, and routes their Steam Cloud RPCs
 # through CloudRedirect's cloud-save engine.
 #
 # Provider sign-in (Google Drive / OneDrive / local folder) is still done through
-# CloudRedirect's own companion app — OpenSteamTool only hosts the DLL.
+# CloudRedirect's own companion app — BetterSteamTools only hosts the DLL.
 enabled = false
 # Path to cloud_redirect.dll. Absolute, or relative to the Steam root directory.
 # Defaults to "<Steam>/cloud_redirect.dll" when unset.
